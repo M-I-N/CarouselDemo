@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		AF98403D21EE3271008A87DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98403C21EE3271008A87DC /* AppDelegate.swift */; };
-		AF98403F21EE3271008A87DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98403E21EE3271008A87DC /* ViewController.swift */; };
+		AF98403F21EE3271008A87DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98403E21EE3271008A87DC /* HomeViewController.swift */; };
 		AF98404221EE3271008A87DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98404021EE3271008A87DC /* Main.storyboard */; };
 		AF98404421EE3273008A87DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF98404321EE3273008A87DC /* Assets.xcassets */; };
 		AF98404721EE3273008A87DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98404521EE3273008A87DC /* LaunchScreen.storyboard */; };
+		AF98404F21EE32F4008A87DC /* SWInflateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98404E21EE32F4008A87DC /* SWInflateLayout.swift */; };
+		AF98405321EE35D6008A87DC /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98405221EE35D6008A87DC /* DesignableView.swift */; };
+		AF98405A21EE5A31008A87DC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98405821EE5A31008A87DC /* VideoCell.swift */; };
+		AF98405B21EE5A31008A87DC /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF98405921EE5A31008A87DC /* VideoCell.xib */; };
+		AF98405D21EE5BF0008A87DC /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98405C21EE5BEF008A87DC /* UICollectionView+Reusable.swift */; };
+		AF98405F21EE5D28008A87DC /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98405E21EE5D28008A87DC /* Reusable.swift */; };
+		AF98406621EE6891008A87DC /* OrientationSupportNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98406521EE6891008A87DC /* OrientationSupportNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF98403921EE3271008A87DC /* CarouselDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarouselDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF98403C21EE3271008A87DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF98403E21EE3271008A87DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF98403E21EE3271008A87DC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF98404121EE3271008A87DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF98404321EE3273008A87DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF98404621EE3273008A87DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF98404821EE3273008A87DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF98404E21EE32F4008A87DC /* SWInflateLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWInflateLayout.swift; sourceTree = "<group>"; };
+		AF98405221EE35D6008A87DC /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		AF98405821EE5A31008A87DC /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		AF98405921EE5A31008A87DC /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		AF98405C21EE5BEF008A87DC /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		AF98405E21EE5D28008A87DC /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		AF98406521EE6891008A87DC /* OrientationSupportNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationSupportNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +69,60 @@
 			isa = PBXGroup;
 			children = (
 				AF98403C21EE3271008A87DC /* AppDelegate.swift */,
-				AF98403E21EE3271008A87DC /* ViewController.swift */,
-				AF98404021EE3271008A87DC /* Main.storyboard */,
+				AF98406121EE63EF008A87DC /* View */,
+				AF98406021EE63DE008A87DC /* Controller */,
+				AF98406221EE6453008A87DC /* Protocols+Extensions */,
+				AF98406321EE6475008A87DC /* Layout */,
+				AF98406421EE6483008A87DC /* Storyboards */,
 				AF98404321EE3273008A87DC /* Assets.xcassets */,
-				AF98404521EE3273008A87DC /* LaunchScreen.storyboard */,
 				AF98404821EE3273008A87DC /* Info.plist */,
 			);
 			path = CarouselDemo;
+			sourceTree = "<group>";
+		};
+		AF98406021EE63DE008A87DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF98403E21EE3271008A87DC /* HomeViewController.swift */,
+				AF98406521EE6891008A87DC /* OrientationSupportNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF98406121EE63EF008A87DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF98405221EE35D6008A87DC /* DesignableView.swift */,
+				AF98405821EE5A31008A87DC /* VideoCell.swift */,
+				AF98405921EE5A31008A87DC /* VideoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF98406221EE6453008A87DC /* Protocols+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF98405E21EE5D28008A87DC /* Reusable.swift */,
+				AF98405C21EE5BEF008A87DC /* UICollectionView+Reusable.swift */,
+			);
+			path = "Protocols+Extensions";
+			sourceTree = "<group>";
+		};
+		AF98406321EE6475008A87DC /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				AF98404E21EE32F4008A87DC /* SWInflateLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		AF98406421EE6483008A87DC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AF98404021EE3271008A87DC /* Main.storyboard */,
+				AF98404521EE3273008A87DC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF98404721EE3273008A87DC /* LaunchScreen.storyboard in Resources */,
+				AF98405B21EE5A31008A87DC /* VideoCell.xib in Resources */,
 				AF98404421EE3273008A87DC /* Assets.xcassets in Resources */,
 				AF98404221EE3271008A87DC /* Main.storyboard in Resources */,
 			);
@@ -135,8 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF98403F21EE3271008A87DC /* ViewController.swift in Sources */,
+				AF98405A21EE5A31008A87DC /* VideoCell.swift in Sources */,
+				AF98403F21EE3271008A87DC /* HomeViewController.swift in Sources */,
 				AF98403D21EE3271008A87DC /* AppDelegate.swift in Sources */,
+				AF98405D21EE5BF0008A87DC /* UICollectionView+Reusable.swift in Sources */,
+				AF98406621EE6891008A87DC /* OrientationSupportNavigationController.swift in Sources */,
+				AF98405321EE35D6008A87DC /* DesignableView.swift in Sources */,
+				AF98404F21EE32F4008A87DC /* SWInflateLayout.swift in Sources */,
+				AF98405F21EE5D28008A87DC /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
